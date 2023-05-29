@@ -1,9 +1,9 @@
 # Solution for Interview coding practise
-## vm-check
+## **[vm-check](https://github.com/pavlov-kirill/interview/tree/master/vm-check)**
 VM Task 
 Assume you have an API that allows you to manage VMs in a data center. 
 One method returns you a list of machine objects, from which you can retrieve the CPU and memory usage, and invoke operations like a reboot.  Write a method that polls the CPU and “alerts” when the last two values are 20% higher than the rolling average for the last five minutes. 
-## hit-counter
+## **[hit-counter](https://github.com/pavlov-kirill/interview/tree/master/hit-counter)**
 Design Hit Counter (medium)
 Design a hit counter which counts the number of hits received in the past 5 minutes.
 Each function accepts a timestamp parameter (in seconds granularity) and you may assume that calls are being made to the system in chronological order (ie, the timestamp is monotonically increasing). You may assume that the earliest timestamp starts at 1.
@@ -33,7 +33,7 @@ counter.getHits(300);
 counter.getHits(301);
 Follow up:
 What if the number of hits per second could be very large? Does your design scale?
-## logger-rate-limiter
+## **[logger-rate-limiter](https://github.com/pavlov-kirill/interview/tree/master/logger-rate-limiter)**
 Logger Rate Limiter
 Design a logger system that receives a stream of messages along with its timestamps, each message should be printed if and only if it is not printed in the last 10 seconds.
 Given a message and a timestamp (in seconds granularity), return true if the message should be printed in the given timestamp, otherwise, return false.
@@ -58,7 +58,7 @@ logger.shouldPrintMessage(10,"foo"); returns false;
 
 // logging string "foo" at timestamp 11
 logger.shouldPrintMessage(11, "foo"); returns true;
-## lru-cache
+## **[lru-cache](https://github.com/pavlov-kirill/interview/tree/master/logger-rate-limiter)**
 Design LRU Cache (medium)
 Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
 get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
@@ -67,3 +67,6 @@ The cache is initialized with a positive capacity.
 Follow up:
 Could you do both operations in O(1) time complexity?
 
+# Run
+Call `npm run start`
+Inside each folder
